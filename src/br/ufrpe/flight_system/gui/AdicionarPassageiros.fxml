@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.flight_system.gui.AdicionarPassageirosController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('/br/ufrpe/flight_system/gui/resources/checkin_background.jpg'); -fx-background-size: cover;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="namePass" layoutX="156.0" layoutY="101.0" prefHeight="25.0" prefWidth="250.0" promptText="Digite um nome..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Text fill="WHITE" layoutX="59.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Passageiros" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Button fx:id="addBttn" layoutX="459.0" layoutY="336.0" mnemonicParsing="false" onAction="#enviarPass" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Adicionar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="passportPass" layoutX="156.0" layoutY="190.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite um passaporte..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <TextField fx:id="cpfPass" layoutX="156.0" layoutY="232.0" prefHeight="25.0" prefWidth="146.0" promptText="Digite um cpf..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <TextField fx:id="surnamePass" layoutX="156.0" layoutY="146.0" prefHeight="25.0" prefWidth="250.0" promptText="Digite um sobrenome..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Label layoutX="62.0" layoutY="101.0" text="Nome:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="146.0" text="Sobrenome:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="235.0" text="CPF:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="193.0" text="Passaporte:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBttn" layoutX="362.0" layoutY="336.0" mnemonicParsing="false" onAction="#voltarInicio" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

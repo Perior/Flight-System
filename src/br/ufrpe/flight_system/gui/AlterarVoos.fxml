@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.flight_system.gui.AlterarVoosController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('/br/ufrpe/flight_system/gui/resources/addV_background.jpg'); -fx-background-size: cover;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="ciuVoo" layoutX="186.0" layoutY="98.0" prefHeight="25.0" prefWidth="86.0" promptText="Código..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Text fill="WHITE" layoutX="59.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Voos" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Button fx:id="attBttn" layoutX="457.0" layoutY="347.0" mnemonicParsing="false" onAction="#alterarVoo" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Alterar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="101.0" text="Cód. Identificação Único:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="156.0" text="Cidade Origem:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" layoutY="101.0" text="Aeronave:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="296.0" layoutY="156.0" text="Cidade Destino:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBttn" layoutX="360.0" layoutY="347.0" mnemonicParsing="false" onAction="#voltarInicio" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="origem" layoutX="129.0" layoutY="153.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="destino" layoutX="399.0" layoutY="153.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="aeronave" layoutX="399.0" layoutY="98.0" prefWidth="150.0" />
+            <DatePicker fx:id="dataSaida" layoutX="128.0" layoutY="211.0" prefHeight="25.0" prefWidth="153.0" />
+            <DatePicker fx:id="dataChegada" layoutX="399.0" layoutY="211.0" prefHeight="25.0" prefWidth="153.0" />
+            <Label layoutX="29.0" layoutY="214.0" text="Data Saída:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="296.0" layoutY="214.0" text="Data Chegada:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="horaSaida" layoutX="129.0" layoutY="254.0" prefHeight="25.0" prefWidth="86.0" promptText="Hora..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <TextField fx:id="minutoSaida" layoutX="129.0" layoutY="290.0" prefHeight="25.0" prefWidth="86.0" promptText="Minuto..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <TextField fx:id="minutoChegada" layoutX="414.0" layoutY="290.0" prefHeight="25.0" prefWidth="86.0" promptText="Minuto..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <TextField fx:id="horaChegada" layoutX="414.0" layoutY="254.0" prefHeight="25.0" prefWidth="86.0" promptText="Hora..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Label layoutX="29.0" layoutY="257.0" text="Horário Saída:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" layoutY="257.0" text="Horário Chegada:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-image: url('/br/ufrpe/flight_system/gui/resources/passengers_background.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.flight_system.gui.ListaBilhetesController">
+   <children>
+      <TableView fx:id="listaBilhete" layoutX="123.0" layoutY="52.0" prefHeight="419.0" prefWidth="744.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="52.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="name" prefWidth="152.0" text="Nome" />
+            <TableColumn fx:id="surname" minWidth="0.0" prefWidth="169.0" text="Sobrenome" />
+            <TableColumn fx:id="cpf" prefWidth="178.0" text="CPF" />
+            <TableColumn fx:id="passaporte" prefWidth="186.0" text="Passaporte" />
+            <TableColumn fx:id="numAssento" prefWidth="75.0" text="Assento" />
+         </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="301.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Passageiros por Voo">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="backBttn" layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="85.0" text="Voltar" />
+      <Button fx:id="attBttn" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" onAction="#atualizar" prefHeight="25.0" prefWidth="85.0" text="Atualizar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: url('/br/ufrpe/flight_system/gui/resources/seats_background.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.flight_system.gui.ListaAssentosController">
+   <children>
+      <Text fill="#5693dd" layoutX="95.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Assentos">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="backBttn" layoutX="222.0" layoutY="555.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="82.0" text="Voltar" />
+      <Button fx:id="addBttn" layoutX="85.0" layoutY="555.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="25.0" prefWidth="82.0" text="Confirmar" />
+      <ListView fx:id="listaAssentos" layoutX="61.0" layoutY="59.0" prefHeight="472.0" prefWidth="279.0" style="-fx-background-color: trasnparent;" />
+      <Button fx:id="openListBttn" layoutX="159.0" layoutY="252.0" mnemonicParsing="false" onAction="#abrirLista" prefHeight="43.0" prefWidth="82.0" text=" Abrir Lista&#10;de Assentos" textFill="#3f55ae" />
+   </children>
+</AnchorPane>

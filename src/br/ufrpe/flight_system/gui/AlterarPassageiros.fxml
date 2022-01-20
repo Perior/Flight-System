@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.flight_system.gui.AlterarPassageirosController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('/br/ufrpe/flight_system/gui/resources/checkin_background.jpg'); -fx-background-size: cover;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="namePass" layoutX="156.0" layoutY="101.0" prefHeight="25.0" prefWidth="250.0" promptText="Digite um nome..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Text fill="WHITE" layoutX="59.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Passageiros" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Button fx:id="attBttn" layoutX="459.0" layoutY="336.0" mnemonicParsing="false" onAction="#enviarPass" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Alterar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="surnamePass" layoutX="156.0" layoutY="146.0" prefHeight="25.0" prefWidth="250.0" promptText="Digite um sobrenome..." style="-fx-background-color: grey; -fx-background-radius: 15;" />
+            <Label layoutX="62.0" layoutY="101.0" text="Nome:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="146.0" text="Sobrenome:" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBttn" layoutX="362.0" layoutY="336.0" mnemonicParsing="false" onAction="#voltarInicio" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #377ec9; -fx-background-radius: 15;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
